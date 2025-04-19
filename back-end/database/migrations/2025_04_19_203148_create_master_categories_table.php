@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('master_categories', function (Blueprint $table) {
             $table->id();
-            $table->string('name')->unique();
-            $table->integer('code')->unique();
+            $table->string('name');
+            $table->integer('code');
             $table->string('status', 8)->default('Active');
             $table->timestamps();
         });

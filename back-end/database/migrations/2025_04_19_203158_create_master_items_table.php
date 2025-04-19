@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('master_items', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('code')->unique();
+            $table->string('code');
             $table->string('attachment')->nullable();
             $table->string('status', 8)->default('Active');
             $table->foreignId('category_id')->constrained('master_categories')->onDelete('cascade');

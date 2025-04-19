@@ -14,5 +14,6 @@ class MasterItem extends Model
         'status',
         'category_id',
         'brand_id',
+        'user_id',
     ];
 }
